@@ -1,0 +1,27 @@
+// 1. Find reversed string
+// 2. Check if palindrome or not
+
+#include<iostream>
+using namespace std;
+int main(){
+	int num, temp, rev=0,digit;
+	cout<<"Enter a number to check the palindrome"<<endl;
+	cin>>num;
+	temp=num;
+	while(temp!=0){
+		digit=temp%10;
+		rev=(rev*10)+digit;
+		temp=temp/10;
+
+	}
+		cout<<"The reversed number is "<<rev<<endl<<endl;
+
+		if(rev==num){
+					cout<<"It is a palindrome"<<endl;
+		}
+		else{
+					cout<<"It is NOT a palindrome"<<endl;
+
+		}
+	return 0;
+}

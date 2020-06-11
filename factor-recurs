@@ -1,0 +1,23 @@
+//factorial recursion
+#include<iostream>
+using namespace std;
+unsigned long factfunc(unsigned long);
+int main(){
+	int n;
+	unsigned long fact;
+	cout<<"Enter"<<endl;
+	cin>>n;
+	fact=factfunc(n);
+	cout<<"Factorial "<<fact;
+
+}
+
+unsigned long factfunc(unsigned long num){
+	if(num>1)
+		return num*factfunc(num-1);
+	else
+		return 1;
+
+	
+
+}

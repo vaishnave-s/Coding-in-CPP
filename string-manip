@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+	string name;
+	cout<<"Who's you?\n";
+	getline(cin,name);//important-cin alone doesn't 										take values after space
+	cout<<name;
+	cout<<"I bet you are "<<name<<endl;
+	// cout<<name.length();
+	auto spaceoccur = name.find(' ');
+	string begtoend = name.substr(spaceoccur+1);
+	cout<<begtoend;
+
+}
