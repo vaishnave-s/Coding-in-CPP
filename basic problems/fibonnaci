@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){		
+	int n,first=0,second=1,next=0;
+	cout<<"Please enter the number of terms:"<<endl;
+	cin>>n;
+	cout<<"Fibonacci series"<<endl;
+	while(n>0){
+		cout<<first<<endl;
+		next=first+second;
+		first=second;
+		second=next;
+		n--;
+	}
+	return 0;
+}

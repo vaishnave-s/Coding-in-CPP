@@ -1,0 +1,15 @@
+//eg 1
+// #include <iostream>
+
+// int main() {
+// 	int x=3;
+// 	(x<4 && x>2)?std::cout<<"true":std::cout<<"false";
+
+// }
+////////////////////////////////////
+//eg 2
+#include <iostream>
+int main(){
+	bool x=true;
+	(x==true)?std::cout<<"true":std::cout<<"false";
+}
